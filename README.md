@@ -28,44 +28,57 @@ Assicurarsi che anche il progetto backend sia aperto e sia in run il server di s
 ## struttura progetto
 
 - cartella COMPONENTS
-        sottocartella UI
-            componenti installate da schadcn
-        componenti creati da me
+- sottocartella UI
+- componenti installate da schadcn
+- componenti creati da me
 
 - cartella FEATURES
-        sottocartella brackett
-        sottocartella dashboard
-        sottocartella match
-        sottocartella player
-        sottocartella team
-        sottocartella tournament
+- sottocartella brackett
+- sottocartella dashboard
+- sottocartella match
+- sottocartella player
+- sottocartella team
+- sottocartella tournament
 
 - cartella LAYOUTS
-    layout di tutte le pagine tramite il file MainLayout.tsx
+- layout di tutte le pagine tramite il file MainLayout.tsx
 
 - cartella LIB
-    apiErrors.ts per errori da parte del backend
-    backend.ts per my fetch()
-    env.ts per myenv
-    media.ts per i media
-    preloader per il preloader
-    theme.ts per la dark e light mode
-    utils.ts 
+- apiErrors.ts per errori da parte del backend
+- backend.ts per my fetch()
+- env.ts per myenv
+- media.ts per i media
+- preloader per il preloader
+- theme.ts per la dark e light mode
+- utils.ts 
 
 - cartella PAGES
-    pagina HomePage
-    pagina NotFoundPage
-    pagina PlayerPage
-    pagina Preloader
-    pagina TeamPage
-    pagina TournamentHistoryPage
-    pagina TournamentPage
-    pagina TournamentSetupPage
-    pagina TournamentListPage
+- pagina HomePage
+- pagina NotFoundPage
+- pagina PlayerPage
+- pagina Preloader
+- pagina TeamPage
+- pagina TournamentHistoryPage
+- pagina TournamentPage
+- pagina TournamentSetupPage
+- pagina TournamentListPage
 
 
 - cartella Assets
-     sottocartella lotties con all'interno Footballer.json(animazione lottie per page 404)
+- sottocartella lotties con all'interno Footballer.json(animazione lottie per page 404)
+
+## Tecnologie e librerie utilizzate
+• React 18.x
+• Vite 5.x
+• TailwindCSS 4.x
+• Shadcn/ui 3.x
+• Tanstack React Query 5.x
+• Tanstack React Query Devtools 5.x
+• React Router 6.x
+• Lucide React 0.x
+• Sonner 1.x
+• Zod 3.x
+• React Hook Form 7.x
 
 
 # Progetto     
