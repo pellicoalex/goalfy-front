@@ -68,17 +68,18 @@ Assicurarsi che anche il progetto backend sia aperto e sia in run il server di s
 - sottocartella lotties con all'interno Footballer.json(animazione lottie per page 404)
 
 ## Tecnologie e librerie utilizzate
-• React 18.x
-• Vite 5.x
-• TailwindCSS 4.x
-• Shadcn/ui 3.x
-• Tanstack React Query 5.x
-• Tanstack React Query Devtools 5.x
-• React Router 6.x
-• Lucide React 0.x
-• Sonner 1.x
-• Zod 3.x
-• React Hook Form 7.x
+- React 18.x
+- Vite 5.x
+- TailwindCSS 4.x
+- Shadcn/ui 3.x
+- Tanstack React Query 5.x
+- Tanstack React Query Devtools 5.x
+- React Router 6.x
+- React Flow 12.x
+- Lucide React 0.x
+- Sonner 1.x
+- Zod 3.x
+- React Hook Form 7.x
 
 
 # Progetto     
