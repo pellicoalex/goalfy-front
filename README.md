@@ -27,12 +27,12 @@ Assicurarsi che anche il progetto backend sia aperto e sia in run il server di s
 
 ## struttura progetto
 
-- cartella COMPONENTS
+  CARTELLA COMPONENTS
 - sottocartella UI
 - componenti installate da schadcn
 - componenti creati da me
 
-- cartella FEATURES
+  CARTELLA FEATURES
 - sottocartella brackett
 - sottocartella dashboard
 - sottocartella match
@@ -40,10 +40,10 @@ Assicurarsi che anche il progetto backend sia aperto e sia in run il server di s
 - sottocartella team
 - sottocartella tournament
 
-- cartella LAYOUTS
+  CARTELLA LAYOUTS
 - layout di tutte le pagine tramite il file MainLayout.tsx
 
-- cartella LIB
+  CARTELLA LIB
 - apiErrors.ts per errori da parte del backend
 - backend.ts per my fetch()
 - env.ts per myenv
@@ -52,7 +52,7 @@ Assicurarsi che anche il progetto backend sia aperto e sia in run il server di s
 - theme.ts per la dark e light mode
 - utils.ts 
 
-- cartella PAGES
+  CARTELLA PAGES
 - pagina HomePage
 - pagina NotFoundPage
 - pagina PlayerPage
@@ -64,7 +64,7 @@ Assicurarsi che anche il progetto backend sia aperto e sia in run il server di s
 - pagina TournamentListPage
 
 
-- cartella Assets
+  CARTELLA Assets
 - sottocartella lotties con all'interno Footballer.json(animazione lottie per page 404)
 
 ## Tecnologie e librerie utilizzate

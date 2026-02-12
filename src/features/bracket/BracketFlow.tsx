@@ -865,6 +865,9 @@ export default function BracketFlow(props: {
           fitViewOptions={{ padding: isMobile ? 0.35 : 0.2 }}
           minZoom={isMobile ? 0.3 : 0.5}
           maxZoom={isMobile ? 1.6 : 2}
+          //se si vuole zoomare di più
+          /* minZoom={isMobile ? 0.3 : 1}
+          maxZoom={isMobile ? 1.6 : 4} */
           proOptions={{ hideAttribution: true }}
           className="relative"
         >

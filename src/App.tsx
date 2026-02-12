@@ -5,6 +5,7 @@ import { RouterProvider } from "react-router";
 import { Toaster } from "sonner";
 import { TanStackDevtools } from "@tanstack/react-devtools";
 import { ReactQueryDevtoolsPanel } from "@tanstack/react-query-devtools";
+import { motion, AnimatePresence } from "framer-motion";
 
 import Preloader from "./pages/Preloader";
 import { markPreloaderShown, shouldShowPreloaderOnce } from "./lib/preloader";
@@ -19,9 +20,12 @@ export default function AppBootstrap({
   router,
 }: AppBootstrapProps) {
   const [showPreloader, setShowPreloader] = useState(false);
+  const [appVisible, setAppVisible] = useState(true);
 
   useEffect(() => {
-    setShowPreloader(shouldShowPreloaderOnce());
+    const mustShow = shouldShowPreloaderOnce();
+    setShowPreloader(mustShow);
+    setAppVisible(!mustShow); // se c'è preloader nascondo app finché non finisce
   }, []);
 
   return (
@@ -31,11 +35,24 @@ export default function AppBootstrap({
         onDone={() => {
           markPreloaderShown();
           setShowPreloader(false);
+          setAppVisible(true); // smooth reveal
         }}
       />
 
       <QueryClientProvider client={queryClient}>
-        <RouterProvider router={router} />
+        <AnimatePresence mode="wait">
+          {appVisible && (
+            <motion.div
+              key="app"
+              initial={{ opacity: 0, y: 10, filter: "blur(6px)" }}
+              animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+              transition={{ duration: 0.45, ease: "easeOut" }}
+              className="min-h-dvh"
+            >
+              <RouterProvider router={router} />
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         <Toaster
           position="bottom-right"
